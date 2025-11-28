@@ -1,5 +1,5 @@
-# Use the latest available Ubuntu image as build stage
-FROM ubuntu:latest AS builder
+# Use the Ubuntu 22 image as build stage
+FROM ubuntu:22.04 AS builder
 
 # Upgrade all packages and install dependencies
 RUN apt-get update \
